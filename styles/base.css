@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+      @media (prefers-color-scheme: dark) {
+    /* Dark theme styles go here */
+    img {
+        opacity: .75;
+        transition: opacity .5s ease-in-out;
+      }
+      img:hover {
+        opacity: 1;
+      }
+    
+  }
+      
+}
